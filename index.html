@@ -1,135 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidReels Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>RapidReels - Automate Your Short-Form Video Creation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        boxdark: '#24303F',
+                        'boxdark-2': '#1A222C',
+                        primary: '#2933c8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-white dark:text-white dark:bg-boxdark-2">
-    <header class="bg-white shadow-md dark:bg-boxdark">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold">RapidReels</a>
-            <ul class="flex space-x-4">
-                <li><a href="#features" class="hover:text-gray-300">Features</a></li>
-                <li><a href="#testimonials" class="hover:text-gray-300">Testimonials</a></li>
-                <li><a href="#faq" class="hover:text-gray-300">FAQ</a></li>
-            </ul>
+<body class="bg-boxdark-2 text-white">
+    <header class="py-4 px-6 lg:px-8">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://mcusercontent.com/582b633836ca6a0c174de0bab/images/c6b53ecf-056c-c054-8ccf-61f1e43f5d1e.png" alt="RapidReels Logo" class="h-8 w-auto">
+                <span class="ml-2 text-xl font-bold">RapidReels</span>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#features" class="hover:text-primary">Features</a>
+                <a href="#plans" class="hover:text-primary">Plans</a>
+                <a href="https://docs.rapidreels.io" class="hover:text-primary">Documentation</a>
+                <a href="https://blog.rapidreels.io" class="hover:text-primary">Blog</a>
+            </div>
+            <div>
+                <a href="http://eepurl.com/iY0Q96" target="_blank" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90">Sign Up for Updates</a>
+            </div>
         </nav>
     </header>
 
-    <main class="isolate dark:bg-boxdark-2">
-        <section id="hero" class="py-20 text-center">
-            <h1 class="text-4xl font-bold mb-4">Welcome to RapidReels</h1>
-            <p class="text-xl mb-8">Create and share amazing short videos</p>
-            <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600">Get Started</a>
-        </section>
-
-        <section id="clients" class="py-16 bg-gray-100 dark:bg-boxdark">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl font-bold mb-8 text-center">Our Clients</h2>
-                <div class="flex justify-center space-x-8">
-                    <!-- Add client logos here -->
-                    <div class="w-24 h-24 bg-gray-300"></div>
-                    <div class="w-24 h-24 bg-gray-300"></div>
-                    <div class="w-24 h-24 bg-gray-300"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="py-16">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl font-bold mb-8 text-center">Features</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold mb-2">Easy Editing</h3>
-                        <p>Edit your videos with our intuitive tools</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold mb-2">Quick Sharing</h3>
-                        <p>Share your creations instantly on social media</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
-                        <p>Work together with friends on projects</p>
+    <main>
+        <section id="hero" class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h1 class="text-4xl font-bold sm:text-6xl">
+                        Automate Your <span class="italic">Short-Form</span> Video Creation
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        RapidReels helps you generate engaging short-form videos for TikTok, Instagram, and YouTube in <strong>just one click</strong> using AI-powered automation.
+                    </p>
+                    <div class="mt-16">
+                        <h2 class="text-lg font-bold mb-4">🚀 Be the First to Know!</h2>
+                        <p class="text-lg mb-8">Sign up for early access and a chance to win free credits!</p>
+                        <div id="mc_embed_signup">
+                            <form action="https://outlook.us11.list-manage.com/subscribe/post?u=582b633836ca6a0c174de0bab&amp;id=408035284d&amp;f_id=0099aae0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate flex justify-center items-center" target="_self" novalidate>
+                                <div id="mc_embed_signup_scroll" class="flex w-full max-w-md">
+                                    <div class="mc-field-group flex-grow">
+                                        <input type="email" name="EMAIL" class="required email px-4 py-2 rounded-l-md text-boxdark w-full" id="mce-EMAIL" required placeholder="Enter your email">
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_582b633836ca6a0c174de0bab_408035284d" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear foot">
+                                        <input type="submit" value="Get Notified" name="subscribe" id="mc-embedded-subscribe" class="button rounded-r-md bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials" class="py-16 bg-gray-100 dark:bg-boxdark">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl font-bold mb-8 text-center">Testimonials</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-boxdark-2 p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"RapidReels has transformed how I create content!"</p>
-                        <p class="font-semibold">- Jane Doe</p>
+        <section id="features" class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold sm:text-4xl">The <span class="text-primary">Best</span> Features</h2>
+                    <p class="mt-4 text-lg text-gray-300">Don't work harder. Work smarter.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-lg bg-boxdark p-2 ring-2 ring-primary">
+                            <span class="text-2xl">🎬</span>
+                        </div>
+                        <h3 class="mt-4 text-lg font-semibold">Preset Video Templates</h3>
+                        <p class="mt-2 text-center text-gray-300">Choose from a variety of pre-built templates designed for short-form content.</p>
                     </div>
-                    <div class="bg-white dark:bg-boxdark-2 p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"The best video editing tool I've ever used."</p>
-                        <p class="font-semibold">- John Smith</p>
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-lg bg-boxdark p-2 ring-2 ring-primary">
+                            <span class="text-2xl">📚</span>
+                        </div>
+                        <h3 class="mt-4 text-lg font-semibold">Creative Library</h3>
+                        <p class="mt-2 text-center text-gray-300">Easily view, manage, and download all your created videos in one personal library.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-lg bg-boxdark p-2 ring-2 ring-primary">
+                            <span class="text-2xl">📊</span>
+                        </div>
+                        <h3 class="mt-4 text-lg font-semibold">User-Friendly Dashboard</h3>
+                        <p class="mt-2 text-center text-gray-300">Access templates, manage your creative library, and track video creation progress.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-lg bg-boxdark p-2 ring-2 ring-primary">
+                            <span class="text-2xl">🚀</span>
+                        </div>
+                        <h3 class="mt-4 text-lg font-semibold">One-Click Video Generation</h3>
+                        <p class="mt-2 text-center text-gray-300">Generate fully edited, ready-to-post videos within minutes using AI-powered technology.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="py-16">
-            <div class="container mx-auto px-4">
-                <h2 class="text-2xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
-                <div class="space-y-4">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2">How do I get started?</h3>
-                        <p>Simply sign up for an account and start creating!</p>
+        <section id="faq" class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold sm:text-4xl">Frequently Asked Questions</h2>
+                    <p class="mt-4 text-lg text-gray-300">Got questions? We've got answers.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2">
+                    <div class="rounded-lg bg-boxdark p-6">
+                        <h3 class="text-xl font-semibold">How does RapidReels work?</h3>
+                        <p class="mt-2 text-gray-300">RapidReels uses AI-powered technology to automate the video creation process. Simply choose a template, input your content, and our system will generate a fully edited video for you.</p>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2">Is there a free trial?</h3>
-                        <p>Yes, we offer a 14-day free trial for all new users.</p>
+                    <div class="rounded-lg bg-boxdark p-6">
+                        <h3 class="text-xl font-semibold">What types of video templates are available?</h3>
+                        <p class="mt-2 text-gray-300">We offer various templates including quiz videos, "Did You Know" facts, and story-based videos with gameplay backgrounds. Can't find what you need? <a href="https://forms.gle/your-google-form-link" target="_blank" class="text-primary hover:underline">Fill out our form</a> to request new templates!</p>
+                    </div>
+                    <div class="rounded-lg bg-boxdark p-6">
+                        <h3 class="text-xl font-semibold">What platforms are supported?</h3>
+                        <p class="mt-2 text-gray-300">RapidReels creates videos optimized for TikTok, Instagram Reels, and YouTube Shorts. Our templates are designed to meet the specifications of each platform.</p>
+                    </div>
+                    <div class="rounded-lg bg-boxdark p-6">
+                        <h3 class="text-xl font-semibold">How can I get early access?</h3>
+                        <p class="mt-2 text-gray-300">Sign up with your email on our website to be notified about early access. You'll also have a chance to win free credits when we launch!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold sm:text-4xl">Pick your <span class="text-primary">pricing</span></h2>
+                    <p class="mt-4 text-lg text-gray-300">Choose a plan that works best for you</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="rounded-lg bg-boxdark p-8">
+                        <h3 class="text-xl font-semibold">Basic</h3>
+                        <p class="mt-4 text-3xl font-bold">Coming Soon<span class="text-lg font-normal"></span></p>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">5 videos per week</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">Basic templates</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">720p resolution</span>
+                            </li>
+                        </ul>
+                        <div id="mc_embed_signup">
+                            <form action="https://outlook.us11.list-manage.com/subscribe/post?u=582b633836ca6a0c174de0bab&amp;id=408035284d&amp;f_id=0099aae0f0" method="post" id="mc-embedded-subscribe-form-basic" name="mc-embedded-subscribe-form" class="validate mt-8" target="_self" novalidate>
+                                <div id="mc_embed_signup_scroll" class="flex">
+                                    <div class="mc-field-group flex-grow">
+                                        <input type="email" name="EMAIL" class="required email w-full px-3.5 py-2.5 rounded-l-md text-boxdark" id="mce-EMAIL-basic" required placeholder="Enter your email">
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_582b633836ca6a0c174de0bab_408035284d" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear foot">
+                                        <input type="submit" value="Get Notified" name="subscribe" id="mc-embedded-subscribe-basic" class="button rounded-r-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-boxdark p-8 ring-2 ring-primary">
+                        <h3 class="text-xl font-semibold">Pro</h3>
+                        <p class="mt-4 text-3xl font-bold">Coming Soon<span class="text-lg font-normal"></span></p>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">14 videos per week</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">Advanced templates</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">1080p resolution</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">Priority support</span>
+                            </li>
+                        </ul>
+                        <div id="mc_embed_signup">
+                            <form action="https://outlook.us11.list-manage.com/subscribe/post?u=582b633836ca6a0c174de0bab&amp;id=408035284d&amp;f_id=0099aae0f0" method="post" id="mc-embedded-subscribe-form-pro" name="mc-embedded-subscribe-form" class="validate mt-8" target="_self" novalidate>
+                                <div id="mc_embed_signup_scroll" class="flex">
+                                    <div class="mc-field-group flex-grow">
+                                        <input type="email" name="EMAIL" class="required email w-full px-3.5 py-2.5 rounded-l-md text-boxdark" id="mce-EMAIL-pro" required placeholder="Enter your email">
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_582b633836ca6a0c174de0bab_408035284d" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear foot">
+                                        <input type="submit" value="Get Notified" name="subscribe" id="mc-embedded-subscribe-pro" class="button rounded-r-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-boxdark p-8">
+                        <h3 class="text-xl font-semibold">Enterprise</h3>
+                        <p class="mt-4 text-3xl font-bold">Custom<span class="text-lg font-normal">/month</span></p>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">Unlimited videos</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">Custom templates</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">4K resolution</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2">Dedicated account manager</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-opacity-90">Contact Sales</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+    <footer class="bg-boxdark text-white py-12">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                    <img src="https://mcusercontent.com/582b633836ca6a0c174de0bab/images/c6b53ecf-056c-c054-8ccf-61f1e43f5d1e.png" alt="RapidReels Logo" class="h-8 w-auto mb-4" />
+                    <p class="text-sm">Empowering content creators with AI-driven video creation.</p>
+                </div>
+                <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">App</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">Features</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-500">Documentation</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-500">Blog</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="w-full md:w-1/4 mb-8 md:mb-0">
                     <h3 class="text-lg font-semibold mb-4">Company</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">About</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-500">About</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-500">Privacy</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-500">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Support</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">Privacy</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-8 text-center">
-                <p>&copy; 2023 RapidReels. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // You can add any necessary JavaScript here
-    </script>
-</body>
-</html>
+                <div class="w-full md:w-1/4">
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-yellow-500">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-500">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-500">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
